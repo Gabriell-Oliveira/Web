@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(204, 147, 40);
+}
+
+h1 {
+    color: #ffffff;
+    margin: 20px 0;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.main {
+    flex: 2;
+}
+
+.sidebar {
+    flex: 1;
+    width: 100%;
+    margin: 20px 70px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #3864df;
+}
+
+section {
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #0fa56b;
+}
+
+form label {
+    display: inline-block;
+    width: 100%;
+    margin: 8px 0;
+}
+
+form select, form input {
+    padding: 8px;
+    width: 100%;
+    margin: 5px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 8px 16px;
+    color: #fff;
+    background-color: #31a835;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border-color: black;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.livro { background-color: green; } 
+.revista { background-color: blue; } 
+.dvd { background-color: purple; }
+
+.borrow-button {
+    background-color: #31a835; 
+    margin: 8px;
+}
+
+.borrow-button.disabled {
+    background-color: red; 
+}
+
+.return-button {
+    background-color: orange; 
+}
+
+.return-button:hover {
+    background-color: darkorange; 
+}

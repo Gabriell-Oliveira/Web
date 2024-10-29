@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Sistema de Biblioteca</h1>
+
+    <div class="container">
+
+        <div class="main">
+
+            <section>
+                <h2>Adicionar Usuário</h2>
+                <form id="userForm">
+                    <label>Nome: <input type="text" id="userName"></label>
+                    <label>Tipo: 
+                        <select id="userType">
+                            <option disabled selected>Selecione o tipo</option>
+                            <option value="aluno">Aluno</option>
+                            <option value="professor">Professor</option>
+                            <option value="visitante">Visitante</option>
+                        </select>
+                    </label>
+                    <button type="button" onclick="addUser()">Adicionar Usuário</button>
+                </form>
+            </section>
+
+            <section>
+                <h2>Adicionar Item</h2>
+                <form id="itemForm">
+                    <label>Tipo: 
+                        <select id="itemType">
+                            <option disabled selected>Selecione o tipo</option>
+                            <option value="livro">Livro</option>
+                            <option value="revista">Revista</option>
+                            <option value="dvd">DVD</option>
+                        </select>
+                    </label>
+                    <label>Título: <input type="text" id="itemTitle"></label>
+                    <label>Autor/Diretor: <input type="text" id="itemAuthor"></label>
+                    <label>Ano: <input type="number" id="itemYear"></label>
+                    <label>Quantidade: <input type="number" id="itemQuantity"></label>
+                    <button type="button" onclick="addItem()">Adicionar Item</button>
+                </form>
+            </section>
+        </div>
+
+        <div class="sidebar">
+            <h2>Itens Disponíveis</h2>
+            <table id="itemTable">
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Título</th>
+                        <th>Autor/Diretor</th>
+                        <th>Ano</th>
+                        <th>Quantidade</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            <h2>Usuários</h2>
+            <ul id="userList">
+
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
